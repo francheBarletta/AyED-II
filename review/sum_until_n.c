@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <assert.h>
 
-int main(){
+int main()
+{
 
     int n;
     int i = 1;
@@ -9,8 +10,9 @@ int main(){
     printf("Ingrese un numero natural para sumar hasta: ");
     scanf("%d", &n);
     assert(n > 0);
-    
-    while(i < n){
+
+    while (i < n)
+    {
         suma = suma + i;
         i = i + 1;
     }
@@ -19,3 +21,8 @@ int main(){
 
     return 0;
 }
+
+/*🟠 Ejercicio 2.1 — Suma hasta N
+
+Pedí un entero N ≥ 0
+Mostrá la suma de los primeros N naturales usando un for.*/
