@@ -1,5 +1,8 @@
 #include <stdio.h>
 
-int main(){
+int main()
+{
     printf("Hello World!\n");
 }
+
+/*Hacete un hello world capo... no es tan dificil :/*/
