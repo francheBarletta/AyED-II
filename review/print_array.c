@@ -14,8 +14,8 @@ int main()
         arr[i] = x;
         i++;
     }
-    i = 0;
 
+    i = 0;
     while (i < N)
     {
         printf("El arreglo ingresado es: %d \n", arr[i]);
