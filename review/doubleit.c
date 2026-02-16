@@ -12,3 +12,13 @@ int main(void)
 
     return 0;
 }
+
+/*🟢 Ejercicio 0.2 — Entrada simple
+
+Programa que:
+
+Pida un entero
+
+Lo imprima
+
+Imprima el doble*/
