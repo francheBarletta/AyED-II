@@ -13,7 +13,18 @@ int pares(int arr[],int n){
     return countpar;
 }
 
+float promedio(int arr[], int n){
+    int i = 0;
+    int suma = 0;
+    int count_mayor_promedio = 0;
 
+    while(i < n){
+        suma = suma + i;
+        i++;
+    }
+    float prom = (float)suma / n;
+    return prom;
+}
 
 
 
