@@ -32,8 +32,10 @@ int maximo(int arr[], int n)
     int i = 0;
     int max = arr[0];
 
-    while(i < n){
-        if(arr[i] > max){
+    while (i < n)
+    {
+        if (arr[i] > max)
+        {
             max = arr[i];
         }
         i++;
@@ -41,11 +43,13 @@ int maximo(int arr[], int n)
     return max;
 }
 
-int main(void) {
+int main(void)
+{
     int arr[N];
     int i = 0;
 
-    while (i < N) {
+    while (i < N)
+    {
         printf("Ingrese un numero: ");
         scanf("%d", &arr[i]);
         i++;
