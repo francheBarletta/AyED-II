@@ -24,7 +24,7 @@ int main()
     return 0;
 }
 
-/*🔵 Ejercicio 3.1 — Cargar e imprimir arreglo
+/*🔵 Ejercicio 2.1 — Cargar e imprimir arreglo
 
 Definí un arreglo de tamaño 5
 

@@ -33,7 +33,7 @@ int main()
     return 0;
 }
 
-/*🟠 Ejercicio 2.2 — Contador con condición
+/*🟠 Ejercicio 1.2 — Contador con condición
 
 Pedí 10 números al usuario.
 

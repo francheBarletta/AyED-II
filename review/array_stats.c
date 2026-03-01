@@ -62,7 +62,7 @@ int main(void)
     return 0;
 }
 
-/*🔵 Ejercicio 3.2 — Suma y máximo
+/*🔵 Ejercicio 2.2 — Suma y máximo
 
 Con el arreglo anterior:
 

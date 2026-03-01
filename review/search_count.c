@@ -94,7 +94,7 @@ int main()
     return 0;
 }
 
-/*🔵 Ejercicio 3.3 — Búsqueda y Conteo
+/*🔵 Ejercicio 2.3 — Búsqueda y Conteo
 📌 Enunciado
 
 Dado un arreglo de tamaño N ya cargado:

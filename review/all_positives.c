@@ -42,7 +42,7 @@ int main(void)
     return 0;
 }
 
-/*🔴 Ejercicio 4.1 — Todos positivos
+/*🔴 Ejercicio 3.1 — Todos positivos
 
 Función:
 

@@ -22,7 +22,7 @@ int main()
     return 0;
 }
 
-/*🟠 Ejercicio 2.1 — Suma hasta N
+/*🟠 Ejercicio 1.1 — Suma hasta N
 
 Pedí un entero N ≥ 0
 Mostrá la suma de los primeros N naturales usando un for.*/

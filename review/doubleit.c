@@ -13,7 +13,7 @@ int main(void)
     return 0;
 }
 
-/*🟢 Ejercicio 0.2 — Entrada simple
+/*🟢 Ejercicio 0.1 — Entrada simple
 
 Programa que:
 

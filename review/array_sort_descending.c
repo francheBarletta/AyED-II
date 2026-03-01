@@ -50,7 +50,7 @@ int main(void)
     return 0;
 }
 
-/*🔴Ejercicio 4.2 — Ordenar arreglo de menor a mayor
+/*🔴Ejercicio 3.2 — Ordenar arreglo de menor a mayor
 
 Con el arreglo ya cargado:
 
