@@ -53,10 +53,10 @@ int main(void)
 	}
 	struct bound_data result = check_bound(value, a, ARRAY_SIZE);
 
-	printf("%d", result.is_upperbound);
-	printf("%d", result.is_lowerbound);
-	printf("%u", result.exists);
-	printf("%u", result.where);
+	printf("UpperBound: %d", result.is_upperbound);
+	printf("LowerBound: %d", result.is_lowerbound);
+	printf("Exists?: %u", result.exists);
+	printf("Where?: %u", result.where);
 
 	return 0;
 }
