@@ -17,3 +17,15 @@ int main() {
 
     return 0;
 }
+
+/*
+🟢 Nivel 0 — Crear y mostrar
+
+Definir un struct Persona con:
+
+nombre (string)
+edad (int)
+
+Crear una variable, cargarle datos y mostrarla.
+Que imprima los datos.
+*/
