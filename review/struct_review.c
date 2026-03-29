@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <string.h>
 
-struct Persona{
-    char nombre [50];
+struct Persona
+{
+    char nombre[50];
     int edad;
 };
 
-int main() {
+int main()
+{
     struct Persona a1;
 
     strcpy(a1.nombre, "Luciano Barlettini");
