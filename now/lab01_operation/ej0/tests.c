@@ -63,3 +63,9 @@ int main(void) {
 
     return EXIT_SUCCESS;
 }
+
+
+/*
+Comand: gcc -Wall -Wextra -pedantic -std=c99 fixstring.c tests.c -o tests
+./tests
+*/
