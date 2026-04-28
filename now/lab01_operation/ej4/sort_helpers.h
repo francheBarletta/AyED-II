@@ -19,20 +19,19 @@ void reset_comparisons_counter();
 
 unsigned int comparisons_number();
 /* Returns value of comparisons_counter
-*/
+ */
 
 void reset_swaps_counter();
 /* Resets the counter of swaps */
 
 unsigned int swaps_number();
 /* Returns value of swaps_counter
-*/
+ */
 
 void set_current_time();
 /* Initialize the current time */
 
 double calculate_elapsed_time();
 /* Calculate the time elapsed in milliseconds */
-
 
 #endif
