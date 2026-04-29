@@ -94,23 +94,5 @@ int main(int argc, char *argv[])
     printf("stadistics for quick_sort\n");
     printf("time elapsed=%g,    comparisons: %10u,    swaps: %10u\n", calculate_elapsed_time(), comparisons_number(), swaps_number());
 
-    /* all the same for insertion_sort */
-    /* Usando la idea de las líneas de códigos anteriores
-       muestre las estadísticas (tiempo de ejecución, número de comparaciones e
-       intercambios realizados) para insertion_sort. No te olvides que antes debes
-       copiar el arreglo original, resetear los contadores y setear el tiempo.
-       void insertion_sort(int a[], unsigned int length)
-
-    */
-    /* needs implementation */
-
-    /* all the same for quick_sort */
-    /* Usando la idea de las líneas de códigos anteriores
-       muestre las estadísticas (tiempo de ejecución, número de comparaciones e
-       intercambios realizados) para quick_sort. No te olvides que antes debes
-       copiar el arreglo original, resetear los contadores y setear el tiempo.
-    */
-    /* needs implementation */
-
     return EXIT_SUCCESS;
 }
