@@ -7,26 +7,37 @@
 #include "sort_helpers.h"
 #include "fixstring.h"
 
-void swap(fixstring a[], unsigned int i, unsigned int j) {
-    /*
-     * COMPLETAR
-     *
-     */
+void swap(fixstring a[], unsigned int i, unsigned int j)
+{
+    fstring_swap(a[i], a[j]);
 }
 
-bool goes_before(fixstring x, fixstring y) {
-    /*
-     * COMPLETAR
-     *
-     */
-    return false;
+bool goes_before(fixstring x, fixstring y)
+{
+    return fstring_less_eq(x, y);
 }
 
-bool array_is_sorted(fixstring array[], unsigned int length) {
+bool array_is_sorted(fixstring array[], unsigned int length)
+{
     unsigned int i = 1;
-    while (i < length && goes_before(array[i-1], array[i])) {
+    while (i < length && goes_before(array[i - 1], array[i]))
+    {
         i++;
     }
     return (i >= length);
 }
 
+/*
+bool fstring_less_eq(fixstring s1, fixstring s2)
+{
+    unsigned int i = 0;
+    while (s1[i] && s2[i] && s1[i] == s2[i])
+        i++;
+    // i es la primer posición donde la proposición
+    // s1[i] ^ s2[i] ^ s1[i] == s2[i] es falsa
+    // s1[i] == 0 v s2[i] == 0 v s1[i] != s2[i]
+    // para todo i anterior a este, valió s1[i] == s2[i] (donde no había terminado ningún string)
+    // "s1 anterior a s2" <=> lo de arriba ^ (s1[i] <= s2[i] o s1 == 0)
+    return s1[i] <= s2[i];
+}
+*/
