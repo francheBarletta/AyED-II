@@ -12,20 +12,33 @@
 #define LST_YEAR 2016
 #define YEARS 37
 
-typedef enum {january, february, march, april, may, june, july, august, september, october, november, december} month_t;
+typedef enum
+{
+  january,
+  february,
+  march,
+  april,
+  may,
+  june,
+  july,
+  august,
+  september,
+  october,
+  november,
+  december
+} month_t;
 
 #define MONTHS 12
 
 #define DAYS 28
 
-typedef Weather WeatherTable [YEARS][MONTHS][DAYS];
+typedef Weather WeatherTable[YEARS][MONTHS][DAYS];
 
 /**
  * @brief Write the content of the table 'a' into stdout.
  * @param[in] a table to dump in stdout
  */
 void table_dump(WeatherTable a);
-
 
 /**
  * @brief reads an table of weather information from file

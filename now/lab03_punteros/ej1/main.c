@@ -10,12 +10,14 @@
 
 /* Then, this project's includes, alphabetically ordered */
 #include "weather_table.h"
+#include "weather_utils.h"
 
 /**
  * @brief print usage help
  * @param[in] program_name Executable name
  */
-void print_help(char *program_name) {
+void print_help(char *program_name)
+{
     /* Print the usage help of this program. */
     printf("Usage: %s <input file path>\n\n"
            "Load climate data from a given file in disk.\n"
@@ -35,11 +37,13 @@ void print_help(char *program_name) {
  *
  * @return An string containing read filepath
  */
-char *parse_filepath(int argc, char *argv[]) {
+char *parse_filepath(int argc, char *argv[])
+{
     /* Parse the filepath given by command line argument. */
     char *result = NULL;
 
-    if (argc < 2) {
+    if (argc < 2)
+    {
         print_help(argv[0]);
         exit(EXIT_FAILURE);
     }
@@ -57,7 +61,8 @@ char *parse_filepath(int argc, char *argv[]) {
  *
  * @return EXIT_SUCCESS when programs executes correctly, EXIT_FAILURE otherwise
  */
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
     char *filepath = NULL;
 
     /* parse the filepath given in command line arguments */
@@ -68,6 +73,23 @@ int main(int argc, char *argv[]) {
 
     /* parse the file to fill the table */
     table_from_file(table, filepath);
+
+    int temp_min = min_temp(table);
+    printf("Temperatura minima hsitorica: %d\n", temp_min);
+
+    int output_max_temp[YEARS];
+    max_temp(table, output_max_temp);
+    for (unsigned int year = 0; year < YEARS; year++)
+    {
+        printf("%u: %d\n", year + FST_YEAR, output_max_temp[year]);
+    }
+
+    month_t output_max_rainfall[YEARS];
+    cant_max_rainfall(table, output_max_rainfall);
+    for (unsigned int year = 0; year < YEARS; year++)
+    {
+        printf("%u: %d\n", year + FST_YEAR, output_max_rainfall[year]);
+    }
 
     /* show the table in the screen */
     table_dump(table);
